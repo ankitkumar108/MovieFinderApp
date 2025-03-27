@@ -4,15 +4,20 @@
 	<meta name="viewport" content="width = device-width, initial-scale = 1, shrink-to-fit = no">
 
 	<!-- Bootstrap CSS -->
+	<link href="" th:href="@{/css/style.css}" rel="stylesheet"/>
+	
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
 	<title>Watchlist Page</title>
 </head>
 
 <body>
-	<div class="container">
+	<div class="">
 		<nav class="navbar navbar-expand-sm navbar-dark bg-secondary">
-			<a class="navbar-brand" href="#">Movies Watchlist App</a>
+		<div>
+	      <img id="logo" src="/images/imdb.png" alt="">
+	    </div>
+			<a class="navbar-brand des_1" href="#">Movies Watchlist App</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
@@ -34,11 +39,11 @@
 
 			</div>
 		</nav>
-		<h2 class="mt-4">Watchlist</h2>
-		<table class="table">
+		<h1 class="mt-4 ml-4" style="font-family: Georgia, 'Times New Roman', Times, serif;color:#007bff;font-weight: 600;">Watchlist</h1>
+		<table class="table ml-2" style="font-family: Georgia, 'Times New Roman', Times, serif;">
 			<thead class="thead-light">
 				<tr>
-					<th class="text-left">Title</th>
+					<th class="text-left">Movie Title</th>
 					<th class="text-left">Rating</th>
 					<th class="text-left">Priority</th>
 					<th class="text-left">Comment</th>
@@ -63,8 +68,8 @@
 			</tbody>
 		</table>
 		<hr />
-		<div>
-			<div>Number of movies to watch: <span th:text="${noOfMovies}">0</span> </div>
+		<div class="ml-4">
+			<div style="font-family: Georgia, 'Times New Roman', Times, serif;"><b>Number of movies to watch: </b><span th:text="${noOfMovies}">0</span> </div>
 		</div>
 
 	</div>
